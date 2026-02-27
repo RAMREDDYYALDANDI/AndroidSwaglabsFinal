@@ -14,6 +14,7 @@ public class ProductTest extends BaseTest {
         // Since LoginTest already finished the login, 
         // we just initialize the Product Page to continue the flow
         ProductPOM productPage = new ProductPOM(driver);
+        driver.getPageSource();
         
         
         System.out.println("✅ Starting Product Selection Flow...");
