@@ -6,24 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.ProductTest">
-        <methods>
-          <include name="AppiumSetup"/>
-          <include name="validateProductSelection"/>
-        </methods>
-      </class> <!-- Tests.ProductTest -->
       <class name="Tests.LoginTest">
         <methods>
-          <include name="logintest" invocation-numbers="0 1 2"/>
+          <include name="logintest" invocation-numbers="0"/>
           <include name="AppiumSetup"/>
         </methods>
       </class> <!-- Tests.LoginTest -->
-      <class name="Tests.CartLogic">
-        <methods>
-          <include name="AppiumSetup"/>
-          <include name="cartpagevalidation"/>
-        </methods>
-      </class> <!-- Tests.CartLogic -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
