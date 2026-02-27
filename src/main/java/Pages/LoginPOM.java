@@ -25,8 +25,8 @@ public class LoginPOM {
 
 	By username = AppiumBy.accessibilityId("test-Username");
 	By password = AppiumBy.accessibilityId("test-Password");
-	//By login = By.xpath("//android.widget.TextView[@text='LOGIN']");
-	By login = By.xpath("//android.widget.TextView[@text='WRONG_BUTTON']");
+	By login = By.xpath("//android.widget.TextView[@text='LOGIN']");
+	//By login = By.xpath("//android.widget.TextView[@text='WRONG_BUTTON']");
 	By Error = By.xpath("//android.widget.TextView[@text='Username and password do not match any user in this service.']");
 	
 	
