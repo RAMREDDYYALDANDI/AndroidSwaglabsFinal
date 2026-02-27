@@ -9,7 +9,7 @@ public class ProductTest extends BaseTest {
 
     // REMOVE the constructor - TestNG doesn't need it
     
-    @Test
+    @Test(dependsOnMethods = {"Tests.LoginTest.logintest"})
     public void validateProductSelection() {
         // Since LoginTest already finished the login, 
         // we just initialize the Product Page to continue the flow

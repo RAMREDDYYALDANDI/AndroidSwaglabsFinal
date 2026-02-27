@@ -23,12 +23,11 @@ public class BaseTest {
 	@BeforeClass
 	public void AppiumSetup() throws IOException
 	{
-		if(driver == null) {
 		prop = new Properties();
 		prop.load(getClass().getClassLoader().getResourceAsStream("Config.properties"));
 		System.out.println("Loaded Keys: "+ prop.keySet());
 		System.out.println("APPIUM APP OPENED:[" +prop.getProperty("appiumURL")+ "]");
-		
+		if(driver == null) {
 		 // 1. Use UiAutomator2Options (Modern Appium 2.0 way)
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName(prop.getProperty("platformName"));
