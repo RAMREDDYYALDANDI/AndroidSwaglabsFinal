@@ -28,6 +28,7 @@ public class ProductPOM {
 	
 	public void scrolltoproduct(String productname)
 	{
+		 System.out.println("🔍 Jenkins Sync: Waiting for Page to settle...");
 		wait.until(ExpectedConditions.presenceOfElementLocated(productpage));
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(productpage));
 		 driver.findElement(productpage).isDisplayed();
