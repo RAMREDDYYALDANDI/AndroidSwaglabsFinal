@@ -28,6 +28,7 @@ public class ProductPOM {
 	
 	public void scrolltoproduct(String productname)
 	{
+		wait.until(ExpectedConditions.presenceOfElementLocated(productpage));
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(productpage));
 		 driver.findElement(productpage).isDisplayed();
 		
