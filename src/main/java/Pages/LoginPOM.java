@@ -39,6 +39,14 @@ public class LoginPOM {
 	}
 	public ProductPOM clicklogin()
 	{
+		if(driver.isKeyboardShown())
+		{
+			driver.hideKeyboard();
+		}
+				
+		// 2. Wait until the LOGIN button is actually ready
+	    wait.until(ExpectedConditions.elementToBeClickable(login));
+
 		driver.findElement(login).click();
 	    // ADD THIS LINE - This is the bridge
 	    return new ProductPOM(driver); 
