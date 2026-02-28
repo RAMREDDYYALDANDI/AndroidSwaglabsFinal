@@ -39,6 +39,7 @@ public class BaseTest {
         
         URL url = new URL(prop.getProperty("appiumURL"));
         driver =new AndroidDriver(url,options);
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(15));
         
         System.out.println("✅ APPIUM SESSION STARTED SUCCESSFULLY");	
 				
